@@ -1,1 +1,5 @@
 Html5 Tutorilas ==> https://www.w3schools.com/html/
+
+Google font ==> https://fonts.google.com/
+
+FontAwesome ==> https://fontawesome.com/

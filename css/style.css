@@ -1,0 +1,47 @@
+/* comment yazacağım alan */
+*{
+    /* 24%=padding+border+width
+    24%=padding+border+height */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+
+.paragrafClass{
+    background: black;
+    color:white;
+    font-size: 25px!important;
+    /* padding:iç boşluk */
+    /* padding:20px 40px 60px 80px; */
+    /* padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 80px; */
+    padding:25px 50px;
+
+     /* margin:dış boşluk */
+    margin:55px 25px ;
+    /*bazen istediğimiz gibi değiştirmiyor */
+}
+
+.div_css{
+    /* renk: hexadecimal: 16: 0 1 2 3 4 5 6 7 8 9 a b c d e f */
+    background-color: #000000;
+    /* color:#fff; */
+    /* color:rgb(255,255,255); */
+    /* color:rgba(255,255,255,0.5); */
+    color:rgba(255,255,255,1);
+    height: 200px;
+    /* width: 180px; */
+    width: 24%;
+    display: inline-block;
+    border:5px solid rgb(94, 185, 19);
+    margin-bottom: 2px;
+    /* border-radius: 50%; */
+    /* border-bottom-left-radius: 18%; */
+    font-size: 25px!important;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+    
+}
