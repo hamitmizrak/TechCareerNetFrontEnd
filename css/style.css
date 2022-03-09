@@ -1,47 +1,225 @@
 /* comment yazacağım alan */
-*{
-    /* 24%=padding+border+width
+* {
+  /* 24%=padding+border+width
     24%=padding+border+height */
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
 }
 
-.paragrafClass{
-    background: black;
-    color:white;
-    font-size: 25px!important;
-    /* padding:iç boşluk */
-    /* padding:20px 40px 60px 80px; */
-    /* padding-top: 20px;
+.picture_css{
+    max-width: 100%;
+    
+    /* object-fit: none;
+    object-position: bottom; */
+    /* position: absolute;
+    top:5px; */
+}
+
+/* header */
+header{
+    height: 95vh;
+    background-image: url(../img/forget-me-nots-gc8a90429d_1920.jpg);
+    background-position: left;
+    background-size: cover;
+    /* background-image: linear-gradient(blue,red); */
+
+}
+
+.paragrafClass {
+  background: black;
+  color: white;
+  font-size: 25px !important;
+  /* padding:iç boşluk */
+  /* padding:20px 40px 60px 80px; */
+  /* padding-top: 20px;
     padding-right: 40px;
     padding-bottom: 60px;
     padding-left: 80px; */
-    padding:25px 50px;
+  padding: 25px 50px;
 
-     /* margin:dış boşluk */
-    margin:55px 25px ;
-    /*bazen istediğimiz gibi değiştirmiyor */
+  /* margin:dış boşluk */
+  margin: 55px 25px;
+  /*bazen istediğimiz gibi değiştirmiyor */
 }
 
-.div_css{
-    /* renk: hexadecimal: 16: 0 1 2 3 4 5 6 7 8 9 a b c d e f */
-    background-color: #000000;
-    /* color:#fff; */
-    /* color:rgb(255,255,255); */
-    /* color:rgba(255,255,255,0.5); */
-    color:rgba(255,255,255,1);
-    height: 200px;
-    /* width: 180px; */
-    width: 24%;
-    display: inline-block;
-    border:5px solid rgb(94, 185, 19);
-    margin-bottom: 2px;
-    /* border-radius: 50%; */
-    /* border-bottom-left-radius: 18%; */
-    font-size: 25px!important;
-    font-weight: 900;
-    font-style: italic;
-    font-family: 'Dancing Script', cursive;
-    
+.div_css {
+  /* renk: hexadecimal: 16: 0 1 2 3 4 5 6 7 8 9 a b c d e f */
+  background-color: #000000;
+  /* color:#fff; */
+  /* color:rgb(255,255,255); */
+  /* color:rgba(255,255,255,0.5); */
+  color: rgba(255, 255, 255, 1);
+  height: 200px;
+  /* width: 180px; */
+  width: 24%;
+  display: inline-block;
+  border: 5px solid rgb(94, 185, 19);
+  margin-bottom: 2px;
+  /* border-radius: 50%; */
+  /* border-bottom-left-radius: 18%; */
+  font-size: 25px !important;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+
+  text-align: center;
+  /* text-align: justify; */
+  text-transform: uppercase;
+  text-decoration: underline;
+  /* text-decoration: line-through; */
+}
+
+.div_css:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+  box-shadow: -10px 2px 30px 3px rgb(0, 0, 0, 0.9);
+  width: 35%;
+  /* transition: width 2s; */
+  transition: all 2s;
+  transform: rotate(8deg);
+}
+
+.p1 {
+  text-align: justify;
+  text-decoration: none;
+  text-indent: 15px;
+  margin: 25px 15px;
+  letter-spacing: 0.1px;
+  word-spacing: 4px;
+  line-height: 21px;
+
+  column-count: 3;
+  /* COS: chrome Opera Safari */
+  -webkit-column-count: 3;
+  /* mozilla */
+  -moz-column-count: 3;
+
+  column-rule: 1px solid rgba(0, 0, 0, 0.5);
+  -webkit-column-rule: 1px solid rgba(0, 0, 0, 0.5);
+  -moz-column-rule: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.float_div {
+  color: black;
+  background-color: orange;
+  height: 150px;
+  display: inline-block;
+  width: 24%;
+  font-size: 25px;
+  float: left;
+}
+
+.clearfix_auto::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul {
+  margin-left: 25px;
+  list-style-type: none;
+  text-decoration: none;
+}
+ul li {
+  background-color: red;
+  margin-top: 8px;
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+ul li:hover {
+  background-color: white;
+  margin-top: 8px;
+  padding: 5px;
+  color: red;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+/* selector */
+/* p = bütün p'ler
+div,p{} ==> tüm div'ler ve tüm p'ler
+div > p{} ==> parenti div olacak child: tüm p
+div ~ p{} ==> div ile p aynı hizada tüm p'ler */
+
+h1::after {
+  content: " -yazar: ...";
+}
+
+#special::first-letter {
+  text-transform: uppercase;
+  font-size: 55px;
+}
+
+#special:hover {
+  text-shadow: 0.6px 0.5px rgba(0, 0, 0, 0.4);
+}
+
+
+/* back  */
+#back_top{
+    background-color: black;
+    color: white;
+    position:fixed;
+    bottom: 5px;
+    right: 10px;
+    text-transform: uppercase;
+    padding:8px;
+}
+#back_top:hover{
+    background-color:white ;
+    color: black;
+}
+
+/* media query msa */
+/* 10 <=x<=599 */
+@media screen and (min-width:10px){
+
+    .div_css{
+        width: 100%;
+    }
+    #responsive_tag{
+        background-color: red;
+        color:green;
+    }
+}
+
+/* 600 <=x<=799 */
+@media screen and (min-width:600px){
+
+    .div_css{
+        width: 49%;
+    }
+
+    #responsive_tag{
+        background-color: black;
+        color:yellow;
+    }
+}
+
+/* 800 <=x<=1199 */
+@media screen and (min-width:800px){
+
+    .div_css{
+        width: 32%;
+    }
+
+    #responsive_tag{
+        background-color: blue;
+        color:orange;
+    }
+}
+/* x>=1200 */
+@media screen and (min-width:1200px){
+
+    .div_css{
+        width: 24%;
+    }
+
+    #responsive_tag{
+        background-color: green;
+        color:chocolate;
+    }
 }
